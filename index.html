@@ -5,40 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
   <body>
     <div class="container">
       <div class="logo-area">
         <img src="./assets/desktop/logo.svg" alt="logo" />
-        <h2 class="logo-name">pod</h2>
       </div>
       <div class="copy-area">
         <h1 class="copy-title">
-          Publish your podcasts<br />
+          <span class="copy-title--highlight">Publish your podcasts</span><br />
           everywhere.
         </h1>
         <p class="copy-text">
-          Upload your audio to Pod with a single click.<br />
-          We’ll then distribute your podcast to Spotify, Apple<br />
-          Podcasts, Google Podcasts, Pocket Casts and more!
+          Upload your audio to Pod with a single click. We’ll then distribute your podcast
+          to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
         </p>
+      </div>
+
+      <div class="platforms-area">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./assets/desktop/spotify.svg" alt="spotify" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/desktop/apple-podcast.svg" alt="spotify" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/desktop/google-podcasts.svg" alt="spotify" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/desktop/pocket-casts.svg" alt="spotify" />
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="form-area">
         <form>
-          <input type="email" />
+          <input class="input-email" type="email" placeholder="Email address" />
           <small class="error-form-message"></small>
           <button class="cta-btn">Request Access</button>
         </form>
-      </div>
-
-      <div class="platforms-area">
-        <img src="./assets/desktop/spotify.svg" alt="spotify" />
-        <img src="./assets/desktop/apple-podcast.svg" alt="spotify" />
-        <img src="./assets/desktop/google-podcasts.svg" alt="spotify" />
-        <img src="./assets/desktop/pocket-casts.svg" alt="spotify" />
       </div>
     </div>
   </body>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom properties */
+
+:root {
+  --ff-principal: 'Chivo', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.938rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-64: 4rem;
+
+  --clr-mint: hsl(157, 74%, 62%);
+  --clr-hover-mint: hsl(157, 51%, 78%);
+  --clr-dark-blue: hsl(225, 26%, 23%);
+  --clr-clear-grey: hsl(225, 21%, 45%);
+  --clr-very-clear-grey: hsl(225, 40%, 83%);
+  --clr-black: hsl(224, 35%, 11%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(var(--clr-dark-blue), rgba(0, 0, 0, 0.7)),
+    url('./assets/mobile/image-host.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+
+  color: var(--clr-very-clear-grey);
+  font-family: var(--ff-principal);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-14);
+
+  line-height: 1.6;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Typography */
+
+.copy-title {
+  font-size: var(--fs-26);
+  font-weight: var(--fw-light);
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.copy-title--highlight {
+  color: var(--clr-mint);
+}
+
+.copy-text {
+}
+
+/* Utility styles */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1.75em;
+  min-width: 315px;
+  max-width: 500px;
+}
+
+/* SECTIONS */
+
+.logo-area {
+  margin-top: 4.5em;
+}
+
+.copy-area {
+  margin-top: 4em;
+}
+
+.copy-title {
+}
+
+.copy-text {
+  margin: 1.15em auto 0;
+  width: 92%;
+  opacity: 0.7;
+}
+
+.platfomrs-area {
+}
+
+.platforms-area > ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2.25em -0.75em 0;
+}
+
+.platforms-area > ul img {
+  width: 75%;
+  opacity: 0.5;
+}
+
+.form-area {
+  width: 100%;
+  margin-top: 3.15em;
+  margin-bottom: 6.5em;
+}
+
+.input-email,
+.cta-btn {
+  width: 100%;
+  border: none;
+  border-radius: 2em;
+  padding: 1em 2em;
+  outline: none;
+  font-weight: var(--fw-bold);
+}
+
+.input-email {
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-white);
+}
+
+.cta-btn {
+  margin-top: 1.2em;
+  background-color: var(--clr-mint);
+  cursor: pointer;
+}
+
+.cta-btn:hover,
+.cta-btn:active,
+.cta-btn:focus {
+  background-color: var(--clr-hover-mint);
+}
