@@ -148,6 +148,21 @@ img {
   margin-bottom: 6.5em;
 }
 
+.error-message {
+  display: block;
+  font-weight: var(--fw-bold);
+  margin-top: 0.5em;
+  margin-left: 2em;
+  text-align: left;
+  opacity: 0;
+  width: 100%;
+}
+
+.error.form-control > .error-message {
+  opacity: 1;
+  color: red;
+}
+
 .input-email,
 .cta-btn {
   width: 100%;
