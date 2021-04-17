@@ -49,20 +49,23 @@ html {
 }
 
 body {
+  /* background */
   background: linear-gradient(var(--clr-dark-blue), rgba(0, 0, 0, 0.7)),
     url('./assets/mobile/image-host.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
 
+  /* Typography */
   color: var(--clr-very-clear-grey);
   font-family: var(--ff-principal);
   font-weight: var(--fw-light);
   font-size: var(--fs-14);
-
   line-height: 1.6;
   text-align: center;
+
+  /* Layout */
+  height: 100%;
 }
 
 img {
@@ -82,17 +85,15 @@ img {
   color: var(--clr-mint);
 }
 
-.copy-text {
-}
-
 /* Utility styles */
 
 .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  height: 100%;
   margin: 0 auto;
   padding: 0 1.75em;
   min-width: 315px;
@@ -105,37 +106,28 @@ img {
   margin-top: 4.5em;
 }
 
-.main-content {
-}
-
 .copy-area {
   margin-top: 4em;
 }
 
-.copy-title {
-}
-
 .copy-text {
   margin: 1.15em auto 0;
-  width: 92%;
   opacity: 0.7;
-}
-
-.platfomrs-area {
+  width: 92%;
 }
 
 .platforms-area > ul {
-  list-style-type: none;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  list-style-type: none;
   margin: 2.25em -0.75em 0;
 }
 
 .platforms-area > ul img {
-  width: 75%;
   opacity: 0.5;
+  width: 75%;
 }
 
 .google-logo {
@@ -143,9 +135,8 @@ img {
 }
 
 .form-area {
+  margin: 3.15em auto 6.5em;
   width: 100%;
-  margin-top: 3.15em;
-  margin-bottom: 6.5em;
 }
 
 .error-message {
@@ -153,24 +144,24 @@ img {
   font-weight: var(--fw-bold);
   margin-top: 0.5em;
   margin-left: 2em;
-  text-align: left;
   opacity: 0;
+  text-align: left;
   width: 100%;
 }
 
 .error.form-control > .error-message {
-  opacity: 1;
   color: red;
+  opacity: 1;
 }
 
 .input-email,
 .cta-btn {
-  width: 100%;
   border: none;
   border-radius: 2em;
-  padding: 1em 2em;
-  outline: none;
   font-weight: var(--fw-bold);
+  outline: none;
+  padding: 1em 2em;
+  width: 100%;
 }
 
 .input-email {
@@ -179,9 +170,9 @@ img {
 }
 
 .cta-btn {
-  margin-top: 1.2em;
   background-color: var(--clr-mint);
   cursor: pointer;
+  margin-top: 1.2em;
 }
 
 .cta-btn:hover,
@@ -200,16 +191,17 @@ img {
   .container {
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0;
-    padding: 0 0 0 2.5em;
-    width: 100%;
-    max-width: none;
-    text-align: left;
 
     background-image: url('./assets/tablet/image-host.jpg');
     background-position: right top;
     background-repeat: no-repeat;
     background-size: 60%;
+
+    margin: 0;
+    padding: 0 0 0 2.5em;
+    text-align: left;
+    width: 100%;
+    max-width: none;
   }
 
   .logo-area {
@@ -217,9 +209,10 @@ img {
   }
 
   .main-content {
-    background-color: var(--clr-black);
     display: flex;
     flex-direction: column;
+
+    background-color: var(--clr-black);
     margin-top: 8em;
     margin-left: -2.5em;
     padding-left: 2.5em;
@@ -228,8 +221,9 @@ img {
 
   .copy-area {
     order: -2;
-    padding-top: 6em;
+
     margin-top: 0;
+    padding-top: 6em;
   }
 
   .copy-title {
@@ -238,16 +232,16 @@ img {
   }
   .copy-text {
     font-size: var(--fs-18);
-    width: 70%;
     margin: 1.6em 0 0;
+    width: 70%;
   }
 
   .form-area {
     order: -1;
 
-    width: 65%;
-    position: relative;
     margin: 3em 0;
+    position: relative;
+    width: 65%;
   }
 
   .input-email {
@@ -255,13 +249,12 @@ img {
   }
 
   .cta-btn {
-    width: 40%;
-
     position: absolute;
     top: -13px;
     right: 3px;
 
     padding: 1.05em 1.5em;
+    width: 40%;
   }
 
   .platfomrs-area {
@@ -269,8 +262,8 @@ img {
   }
 
   .platforms-area > ul {
-    width: 80%;
     margin: 2em 0 0;
+    width: 80%;
   }
 
   .platforms-area > ul img {
@@ -280,30 +273,34 @@ img {
   body::after {
     content: '';
     background: url('./assets/desktop/bg-pattern-dots.svg') no-repeat;
-    width: 240px;
-    height: 100px;
+
     position: absolute;
     bottom: 5px;
     left: 30px;
+
+    height: 100px;
+    width: 240px;
   }
 }
 
 @media (min-width: 1250px) {
   body {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 100%;
   }
   .container {
-    height: 80%;
-    padding: 0;
-    margin: 0;
-    margin-left: 6em;
     background-image: url('./assets/desktop/image-host.jpg');
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: 65.5%;
+
+    height: 80%;
+    margin: 0;
+    margin-left: 6em;
+    padding: 0;
   }
 
   .logo-area {
@@ -311,8 +308,8 @@ img {
   }
 
   .main-content {
-    width: 60%;
     margin-top: 3em;
+    width: 60%;
   }
 
   .copy-title {
@@ -333,6 +330,7 @@ img {
     background: url('./assets/desktop/bg-pattern-dots.svg') no-repeat;
     width: 240px;
     height: 100px;
+
     position: absolute;
     bottom: 16%;
     right: 0px;
@@ -346,9 +344,9 @@ img {
 
 @media (min-width: 1250px) and (max-height: 725px) {
   .container {
+    background-size: 70%;
     margin-top: 5em;
     margin-bottom: 5em;
-    background-size: 70%;
   }
 
   .copy-area {
